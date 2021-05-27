@@ -1,0 +1,55 @@
+{
+    "name": "KeyInputActions",
+    "maps": [
+        {
+            "name": "KeyControl",
+            "id": "e715e16b-d8f5-4350-a0c8-726d3c87d0cb",
+            "actions": [
+                {
+                    "name": "KeyControl",
+                    "type": "Button",
+                    "id": "764df4b4-4ee6-485f-9391-16ab707ecace",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "6762a6e4-4a2f-403c-9f94-90e0a045e911",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyControl",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "30288166-8e19-446d-96e6-0a5ed4c204a3",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyControl",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "7e40b333-4cce-4f8d-8874-aef1da8c6626",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyControl",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -1,0 +1,93 @@
+﻿using System;
+using UnityEngine;
+
+public class PlayerMoving : MonoBehaviour {
+    private float _directionX = 0f;
+    private float _directionY = 0f;
+    
+    public void SetDirectionX(float value) {
+        _directionX = value;
+    }
+
+    public void SetDirectionY(float value) {
+        _directionY = value;
+    }
+
+    private Rigidbody2D _rigidbody2D = null;
+
+    [SerializeField] private float horizontalSpeed = 0f;
+    [SerializeField] private float forceVertical = 0f;
+
+    private void Start() {
+        _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
+        _rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+    }
+
+    private void FixedUpdate() {
+        // horizontal move
+        float x = _directionX * horizontalSpeed;
+        float y = _rigidbody2D.velocity.y;
+        _rigidbody2D.velocity = new Vector2(x, y);
+        
+        // значения по оси X для левого края героя, середины, правого края героя
+        float leftX = transform.position.x - 0.2f;
+        float middleX = transform.position.x;
+        float rightX = transform.position.x + 0.2f;
+        // позиция по оси Y чуть ниже ступней героя
+        float posY = transform.position.y - 0.6f;
+            
+        // получаем 3 точки, из которых будут выходить проверочные векторы
+        _leftVector = new Vector2(leftX, posY);
+        _middleVector = new Vector2(middleX, posY);
+        _rightVector = new Vector2(rightX, posY);
+        
+        // из каждой точки опускаем проверочный вектор длиной LengthControlling
+        // возвращаемый флаг будет True, если проверочный вектор коснется платформы
+        _flagLeft = BottomControl(_leftVector, LengthControlling);
+        _flagMiddle = BottomControl(_middleVector, LengthControlling);
+        _flagRight = BottomControl(_rightVector, LengthControlling);
+        
+        // vertical jump
+        if (!(_directionY > 0)) return;
+        // хотя бы один проверочный вектор должен коснуться платформы
+        bool existsGoodFlag = (_flagLeft || _flagMiddle || _flagRight);
+        if (!existsGoodFlag) return;
+        _rigidbody2D.AddForce(Vector2.up * forceVertical, ForceMode2D.Impulse);
+    }
+
+    // проверочные векторы для контроля касания платформ
+    private Vector2 _leftVector = Vector2.zero;
+    private Vector2 _middleVector = Vector2.zero;
+    private Vector2 _rightVector = Vector2.zero;
+    
+    // длина проверочных векторов
+    private const float LengthControlling = 0.2f;
+
+    // состояния - касается ли в данный момент проверочный вектор платформы
+    private bool _flagLeft = false;
+    private bool _flagMiddle = false;
+    private bool _flagRight = false;
+
+    private static bool BottomControl(Vector2 startPosition, float distanceFloat) {
+        // бросаем луч вниз и выходим, если луч никого не коснулся
+        RaycastHit2D hit = Physics2D.Raycast(startPosition, Vector2.down, distanceFloat);
+        if (!hit) return false;
+        // если мы здесь, значит луч чего-то коснулся
+        // проверяем на объекте касания наличие скрипта Ground
+        GameObject bottomObject = hit.transform.gameObject;
+        Ground script = bottomObject.GetComponent<Ground>();
+        return script;
+    }
+
+    private void OnDrawGizmos() {
+        // рисуем для отладки проверочные векторы длины LengthControlling
+        Debug.DrawRay(_leftVector, Vector2.down * LengthControlling, GetColor(_flagLeft));
+        Debug.DrawRay(_middleVector, Vector2.down * LengthControlling, GetColor(_flagMiddle));
+        Debug.DrawRay(_rightVector, Vector2.down * LengthControlling, GetColor(_flagRight));
+    }
+
+    private static Color GetColor(bool condition) {
+        // get good or bad color
+        return condition ? Color.green : Color.red;
+    }
+}

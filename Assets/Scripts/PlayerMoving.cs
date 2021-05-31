@@ -18,12 +18,40 @@ public class PlayerMoving : MonoBehaviour {
     [SerializeField] private float horizontalSpeed = 0f;
     [SerializeField] private float forceVertical = 0f;
 
+    private HeroAnimationControl _heroAnimationControl = null;
+    private SpriteRenderer _spriteRenderer = null;
+    
     private void Start() {
+        _heroAnimationControl = gameObject.GetComponent<HeroAnimationControl>();
+        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         _rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
+    private void ControlFlipHorizontal() {
+        if (_directionX > 0) 
+            _spriteRenderer.flipX = false;
+        else if (_directionX < 0) 
+            _spriteRenderer.flipX = true;
+    }
+
+    private void ControlAnimationState(bool isGroundedHero) {
+        if (isGroundedHero == false) {
+            const string key = "jump";
+            _heroAnimationControl.AnimationHeroPlay(key);
+        } else if (_directionX != 0) {
+            const string key = "run";
+            _heroAnimationControl.AnimationHeroPlay(key);
+        } else {
+            const string key = "idle";
+            _heroAnimationControl.AnimationHeroPlay(key);
+        }
+    }
+    
     private void FixedUpdate() {
+        // flip x control
+        ControlFlipHorizontal();
+        
         // horizontal move
         float x = _directionX * horizontalSpeed;
         float y = _rigidbody2D.velocity.y;
@@ -46,6 +74,9 @@ public class PlayerMoving : MonoBehaviour {
         _flagLeft = BottomControl(_leftVector, LengthControlling);
         _flagMiddle = BottomControl(_middleVector, LengthControlling);
         _flagRight = BottomControl(_rightVector, LengthControlling);
+        
+        // control animation state
+        ControlAnimationState(_flagLeft || _flagMiddle || _flagRight);
         
         // vertical jump
         if (!(_directionY > 0)) return;

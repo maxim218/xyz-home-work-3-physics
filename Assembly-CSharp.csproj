@@ -58,13 +58,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\EnemyControl.cs" />
      <Compile Include="Assets\Scripts\FrameAnimationControl.cs" />
      <Compile Include="Assets\Scripts\Ground.cs" />
+     <Compile Include="Assets\Scripts\HeartLive.cs" />
      <Compile Include="Assets\Scripts\HeroAnimationControl.cs" />
      <Compile Include="Assets\Scripts\HeroControl.cs" />
      <Compile Include="Assets\Scripts\MoneyControl.cs" />
      <Compile Include="Assets\Scripts\PlayerInputControl.cs" />
      <Compile Include="Assets\Scripts\PlayerMoving.cs" />
+     <Compile Include="Assets\Scripts\PortalControl.cs" />
+     <Compile Include="Assets\Scripts\ToggleElementControl.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/PROJECTS/XYZ HomeWork 2 version 2/XYZ HomeWork 2 version 2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

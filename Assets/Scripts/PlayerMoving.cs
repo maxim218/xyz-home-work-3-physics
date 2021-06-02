@@ -49,6 +49,14 @@ public class PlayerMoving : MonoBehaviour {
     }
     
     private void FixedUpdate() {
+        // hero dead
+        if (_heroLiveInt <= 0) {
+            _rigidbody2D.velocity = Vector2.zero;
+            _spriteRenderer.sprite = deadSprite;
+            if(gameObject.GetComponent<Animator>()) Destroy(GetComponent<Animator>());
+            return;
+        }
+        
         // flip x control
         ControlFlipHorizontal();
         
@@ -83,9 +91,24 @@ public class PlayerMoving : MonoBehaviour {
         // хотя бы один проверочный вектор должен коснуться платформы
         bool existsGoodFlag = (_flagLeft || _flagMiddle || _flagRight);
         if (!existsGoodFlag) return;
+        if (_rigidbody2D.velocity.y > 0) return;
         _rigidbody2D.AddForce(Vector2.up * forceVertical, ForceMode2D.Impulse);
     }
 
+    [SerializeField] private Sprite deadSprite = null;
+    
+    private int _heroLiveInt = 5;
+
+    public void SubLive() {
+        _heroLiveInt -= 1; 
+        Debug.Log("Live: " + _heroLiveInt);
+    }
+    
+    public void AddThreeLives() {
+        _heroLiveInt += 3;
+        Debug.Log("Live: " + _heroLiveInt);
+    }
+    
     // проверочные векторы для контроля касания платформ
     private Vector2 _leftVector = Vector2.zero;
     private Vector2 _middleVector = Vector2.zero;

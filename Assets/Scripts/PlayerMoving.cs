@@ -20,8 +20,10 @@ public class PlayerMoving : MonoBehaviour {
 
     private HeroAnimationControl _heroAnimationControl = null;
     private SpriteRenderer _spriteRenderer = null;
+    private HeroHealthControl _heroHealthControl = null;
     
     private void Start() {
+        _heroHealthControl = gameObject.GetComponent<HeroHealthControl>();
         _heroAnimationControl = gameObject.GetComponent<HeroAnimationControl>();
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
@@ -50,7 +52,8 @@ public class PlayerMoving : MonoBehaviour {
     
     private void FixedUpdate() {
         // hero dead
-        if (_heroLiveInt <= 0) {
+        int heroLiveInt = _heroHealthControl.GetLiveInteger();
+        if (heroLiveInt <= 0) {
             _rigidbody2D.velocity = Vector2.zero;
             _spriteRenderer.sprite = deadSprite;
             if(gameObject.GetComponent<Animator>()) Destroy(GetComponent<Animator>());
@@ -96,18 +99,6 @@ public class PlayerMoving : MonoBehaviour {
     }
 
     [SerializeField] private Sprite deadSprite = null;
-    
-    private int _heroLiveInt = 5;
-
-    public void SubLive() {
-        _heroLiveInt -= 1; 
-        Debug.Log("Live: " + _heroLiveInt);
-    }
-    
-    public void AddThreeLives() {
-        _heroLiveInt += 3;
-        Debug.Log("Live: " + _heroLiveInt);
-    }
     
     // проверочные векторы для контроля касания платформ
     private Vector2 _leftVector = Vector2.zero;

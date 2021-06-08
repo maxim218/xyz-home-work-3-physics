@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\HeartLive.cs" />
      <Compile Include="Assets\Scripts\HeroAnimationControl.cs" />
      <Compile Include="Assets\Scripts\HeroControl.cs" />
+     <Compile Include="Assets\Scripts\HeroHealthControl.cs" />
      <Compile Include="Assets\Scripts\MoneyControl.cs" />
      <Compile Include="Assets\Scripts\PlayerInputControl.cs" />
      <Compile Include="Assets\Scripts\PlayerMoving.cs" />

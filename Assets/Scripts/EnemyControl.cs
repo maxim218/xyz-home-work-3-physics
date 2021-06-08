@@ -5,13 +5,14 @@ using UnityEngine;
 public class EnemyControl : MonoBehaviour {
     private SpriteRenderer _spriteRenderer = null;
     private GameObject _hero = null;
-    private PlayerMoving _playerMoving = null;
+    private HeroHealthControl _heroHealthControl = null;
     
     private void Start() {
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         EnemyDangerousSet(true);
-        _hero = GameObject.Find("Hero");
-        _playerMoving = _hero.GetComponent<PlayerMoving>();
+        HeroControl heroControl = (HeroControl)FindObjectOfType(typeof(HeroControl));
+        _hero = heroControl.gameObject;
+        _heroHealthControl = _hero.GetComponent<HeroHealthControl>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
@@ -21,7 +22,7 @@ public class EnemyControl : MonoBehaviour {
         const float forceVertical = 150f;
         rigidbodyHero.AddForce(Vector2.up * forceVertical, ForceMode2D.Impulse);
         EnemyDangerousSet(false);
-        _playerMoving.SubLive();
+        _heroHealthControl.SubLive();
         StartCoroutine( WaitAndMakeDanger() );
     }
 

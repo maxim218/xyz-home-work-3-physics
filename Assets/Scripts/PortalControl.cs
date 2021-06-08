@@ -6,19 +6,16 @@ public class PortalControl : MonoBehaviour {
     private GameObject _hero = null;
 
     private void Start() {
-        _hero = GameObject.Find("Hero");
+        HeroControl heroControl = (HeroControl)FindObjectOfType(typeof(HeroControl));
+        _hero = heroControl.gameObject;
     }
 
     [SerializeField] private GameObject exitObject = null;
 
-    private void Update() {
-        Vector2 posA = ToggleElementControl.GetPositionXY(_hero);
-        Vector2 posB = ToggleElementControl.GetPositionXY(gameObject);
-
-        float distance = Vector2.Distance(posA, posB);
-        if (distance < 0.75f) MoveToExit();
+    private void OnTriggerEnter2D(Collider2D col) {
+        if(col.gameObject == _hero) MoveToExit();
     }
-
+    
     private void MoveToExit() {
         Vector3 exitPos = exitObject.transform.position;
         SetPosition(exitPos.x, exitPos.y);

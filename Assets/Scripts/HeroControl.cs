@@ -27,19 +27,9 @@ public class HeroControl : MonoBehaviour {
         while(!operation.isDone) yield return new WaitForSeconds(1);
     }
 
-    private void MoneyAdd(int moneyValue) {
+    public void MoneyAdd(int moneyValue) {
         string message = "Money: " + moneyValue;
         Debug.Log(message);
         _sumValue += moneyValue;
-    }
-    
-    public void Catch_2() {
-        const int costs = 2;
-        MoneyAdd(costs);
-    }
-    
-    public void Catch_4() {
-        const int costs = 4;
-        MoneyAdd(costs);
     }
 }

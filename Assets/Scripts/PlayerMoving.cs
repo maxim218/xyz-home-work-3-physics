@@ -20,10 +20,10 @@ public class PlayerMoving : MonoBehaviour {
 
     private HeroAnimationControl _heroAnimationControl = null;
     private SpriteRenderer _spriteRenderer = null;
-    private HeroHealthControl _heroHealthControl = null;
+    private ControlHealth _controlHealth = null;
     
     private void Start() {
-        _heroHealthControl = gameObject.GetComponent<HeroHealthControl>();
+        _controlHealth = gameObject.GetComponent<ControlHealth>();
         _heroAnimationControl = gameObject.GetComponent<HeroAnimationControl>();
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
@@ -52,7 +52,7 @@ public class PlayerMoving : MonoBehaviour {
     
     private void FixedUpdate() {
         // hero dead
-        int heroLiveInt = _heroHealthControl.GetLiveInteger();
+        int heroLiveInt = _controlHealth.Lives;
         if (heroLiveInt <= 0) {
             _rigidbody2D.velocity = Vector2.zero;
             _spriteRenderer.sprite = deadSprite;

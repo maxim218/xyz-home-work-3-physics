@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HeartLive : MonoBehaviour {
-    private void OnDestroy() {
-        HeroHealthControl heroHealthControl = _hero.GetComponent<HeroHealthControl>();
-        heroHealthControl.AddThreeLives();
-    }
+    [SerializeField] private int liveDelta = 3;
     
     private GameObject _hero = null;
 
@@ -16,6 +13,9 @@ public class HeartLive : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D col) {
-        if(col.gameObject == _hero) Destroy(gameObject);
+        if (col.gameObject != _hero) return;
+        ControlHealth controlHealth = _hero.GetComponent<ControlHealth>();
+        controlHealth.AddLives(liveDelta);
+        Destroy(gameObject);
     }
 }

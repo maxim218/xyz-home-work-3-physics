@@ -1,74 +1,36 @@
-### XYZ - Домашняя работа 6
+## XYZ
 
-### Исправление недочётов - попытка next
+## Домашняя работа 7
 
-Переименовал компонент, отвечающий за здоровье
+## Тема - системы частиц и динамическое создание GameObject - ов
 
-```
-Было - HeroHealthControl
-Стало - ControlHealth
-```
+### DustControl
 
-Новая версия компонента управления здоровьем
+Скрипт DustControl - отвечает за удаление пыли под ногами.
 
-```
-public class ControlHealth : MonoBehaviour {
-    [SerializeField] private int lives = 5;
-    
-    public int Lives => lives;
+Функция удаления вызывается прямо из анимации.
 
-    public void AddLives(int value) {
-        lives += value;
-        string message = "Lives: " + lives;
-        Debug.Log(message);
-    }
-}
-```
+### PlayerMoving
 
-Теперь количество жизней изменяется следующим образом
+Добавлены методы:
 
-```
-[SerializeField] private int liveDelta = -1;
-...
-_controlHealth.AddLives(liveDelta);
-```
+- для получения текущих физических скоростей героя
 
-Количество жизней теперь получаю так
+- для получения информации, стоит ли герой на земле
 
-```
-int heroLiveInt = _controlHealth.Lives;
-```
+### FallSpeedControl
 
-В скрипте HeartLive вынес логику из OnDestroy
+Хранит три последних значения скорости героя по вертикали.
 
-```
-private void OnTriggerEnter2D(Collider2D col) {
-    if (col.gameObject != _hero) return;
-    ControlHealth controlHealth = _hero.GetComponent<ControlHealth>();
-    controlHealth.AddLives(liveDelta);
-    Destroy(gameObject);
-}
-```
+Выдаёт среднее значение последних трёх скоростей.
 
-Монетки разных стоимостей сделал разными префабами
+Нужен, так как скорость по вертикали в RigidBody2D постоянно скачет между положительным и отрицательным значением, когда герой стоит на земле.
 
-Изменил скрипт MoneyControl
+### DustFabric
 
-Теперь у каждой монетки есть своя стоимость
+Контролирует создание префабов пыли разного вида под ногами героя.
 
-Стоимость монетки передаётся в метод увеличения количества собранных монет героем
+Работа ведётся внутри функции FixedUpdate, а также внутри функции TimeRepeatAction (с помощью сопрограммы идёт задержка во времени).
 
-```
-public class MoneyControl : MonoBehaviour {
-    [SerializeField] private int costs = 0;
-    
-    private void OnTriggerEnter2D(Collider2D other) {
-        HeroControl heroControl = other.GetComponent<HeroControl>();
-        if (!heroControl) return;
-        heroControl.MoneyAdd(costs);
-        Destroy(gameObject);
-    }
-}
-```
+Это нужно, чтобы скорость создания префабов НЕ зависела от частоты кадров.
 
-Решил не усложнять с OnTriggerEnter2D в отдельном компоненте

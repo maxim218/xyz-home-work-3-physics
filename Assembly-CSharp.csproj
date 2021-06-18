@@ -59,7 +59,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ControlHealth.cs" />
+     <Compile Include="Assets\Scripts\DustControl.cs" />
+     <Compile Include="Assets\Scripts\DustFabric.cs" />
      <Compile Include="Assets\Scripts\EnemyControl.cs" />
+     <Compile Include="Assets\Scripts\FallSpeedControl.cs" />
      <Compile Include="Assets\Scripts\FrameAnimationControl.cs" />
      <Compile Include="Assets\Scripts\Ground.cs" />
      <Compile Include="Assets\Scripts\HeartLive.cs" />

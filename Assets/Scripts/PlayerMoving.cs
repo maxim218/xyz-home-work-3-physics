@@ -98,6 +98,18 @@ public class PlayerMoving : MonoBehaviour {
         _rigidbody2D.AddForce(Vector2.up * forceVertical, ForceMode2D.Impulse);
     }
 
+    public float GetVelocityHorizontal() {
+        return _rigidbody2D.velocity.x;
+    }
+
+    public float GetVelocityVertical() {
+        return _rigidbody2D.velocity.y;
+    }
+    
+    public bool IsHeroStayOnGround() {
+        return (_flagLeft || _flagMiddle || _flagRight);
+    }
+
     [SerializeField] private Sprite deadSprite = null;
     
     // проверочные векторы для контроля касания платформ

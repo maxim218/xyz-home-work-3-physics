@@ -7,11 +7,15 @@ public class HeroControl : MonoBehaviour {
     private int _sumValue = 0;
 
     private bool _drawBtnFlag = true;
+
+    [SerializeField] private bool flagAllowSceneReload = false;
     
     private void OnGUI() {
         // label with score
         string content = "Count: " + _sumValue;
         GUI.Box(new Rect(140, 20, 100, 26), content);
+
+        if (!flagAllowSceneReload) return;
         
         // reload scene btn
         if (!_drawBtnFlag) return;
@@ -21,6 +25,10 @@ public class HeroControl : MonoBehaviour {
         StartCoroutine(LoadSceneAsync());
     }
 
+    public void NewLevelLoad() {
+        StartCoroutine(LoadSceneAsync());
+    }
+    
     private static IEnumerator LoadSceneAsync() {
         const string sceneNameString = "SampleScene";
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneNameString);

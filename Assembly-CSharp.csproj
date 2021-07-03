@@ -69,10 +69,14 @@
      <Compile Include="Assets\Scripts\HeroAnimationControl.cs" />
      <Compile Include="Assets\Scripts\HeroControl.cs" />
      <Compile Include="Assets\Scripts\MoneyControl.cs" />
+     <Compile Include="Assets\Scripts\PistolControl.cs" />
      <Compile Include="Assets\Scripts\PlayerInputControl.cs" />
      <Compile Include="Assets\Scripts\PlayerMoving.cs" />
      <Compile Include="Assets\Scripts\PortalControl.cs" />
+     <Compile Include="Assets\Scripts\SkullControl.cs" />
+     <Compile Include="Assets\Scripts\StarControl.cs" />
      <Compile Include="Assets\Scripts\ToggleElementControl.cs" />
+     <Compile Include="Assets\Scripts\WinGameControl.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/PROJECTS/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

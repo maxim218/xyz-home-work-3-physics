@@ -1,0 +1,33 @@
+{
+    "name": "KeyInputAttack",
+    "maps": [
+        {
+            "name": "ActionMap",
+            "id": "be75b122-558c-4603-becc-63a3c56a0c64",
+            "actions": [
+                {
+                    "name": "AttackActionR",
+                    "type": "Button",
+                    "id": "6d247d3e-58d8-44a3-a14a-799e7823e174",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b93f75d3-c5c0-485b-a2ee-98df3d03e6ee",
+                    "path": "<Keyboard>/r",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttackActionR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

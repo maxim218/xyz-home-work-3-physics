@@ -58,6 +58,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AttackSword.cs" />
+     <Compile Include="Assets\Scripts\BarrelControl.cs" />
      <Compile Include="Assets\Scripts\ControlHealth.cs" />
      <Compile Include="Assets\Scripts\DustControl.cs" />
      <Compile Include="Assets\Scripts\DustFabric.cs" />
@@ -68,6 +70,7 @@
      <Compile Include="Assets\Scripts\HeartLive.cs" />
      <Compile Include="Assets\Scripts\HeroAnimationControl.cs" />
      <Compile Include="Assets\Scripts\HeroControl.cs" />
+     <Compile Include="Assets\Scripts\HeroKnifeControl.cs" />
      <Compile Include="Assets\Scripts\MoneyControl.cs" />
      <Compile Include="Assets\Scripts\PistolControl.cs" />
      <Compile Include="Assets\Scripts\PlayerInputControl.cs" />
@@ -75,6 +78,7 @@
      <Compile Include="Assets\Scripts\PortalControl.cs" />
      <Compile Include="Assets\Scripts\SkullControl.cs" />
      <Compile Include="Assets\Scripts\StarControl.cs" />
+     <Compile Include="Assets\Scripts\SwordControl.cs" />
      <Compile Include="Assets\Scripts\ToggleElementControl.cs" />
      <Compile Include="Assets\Scripts\WinGameControl.cs" />
  <Reference Include="Unity.Timeline.Editor">

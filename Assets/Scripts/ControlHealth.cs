@@ -6,6 +6,12 @@ public class ControlHealth : MonoBehaviour {
     [SerializeField] private int lives = 5;
     
     public int Lives => lives;
+    
+    private void Start() {
+        GameObject saveObj = GameObject.Find("--X--X--SessionStore--X--X--");
+        SessionStoreControl script = saveObj.GetComponent<SessionStoreControl>();
+        lives = script.HealthStore;
+    }
 
     public void AddLives(int value) {
         lives += value;

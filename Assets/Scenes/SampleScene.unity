@@ -674,6 +674,7 @@ GameObject:
   - component: {fileID: 205011977}
   - component: {fileID: 205011978}
   - component: {fileID: 205011979}
+  - component: {fileID: 205011980}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -821,7 +822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53be000fbe48d4d418495286db0e5dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flagAllowSceneReload: 0
 --- !u!95 &205011975
 Animator:
   serializedVersion: 3
@@ -895,6 +895,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8c765f69c66d1e4c9caa7e73f5d4967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &205011980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205011967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115caf8bb4aa0ce439ca0b8c828b168a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &210844876

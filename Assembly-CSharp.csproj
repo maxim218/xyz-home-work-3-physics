@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\FallSpeedControl.cs" />
      <Compile Include="Assets\Scripts\FrameAnimationControl.cs" />
      <Compile Include="Assets\Scripts\Ground.cs" />
+     <Compile Include="Assets\Scripts\GuiInfoRender.cs" />
      <Compile Include="Assets\Scripts\HeartLive.cs" />
      <Compile Include="Assets\Scripts\HeroAnimationControl.cs" />
      <Compile Include="Assets\Scripts\HeroControl.cs" />
@@ -76,6 +77,7 @@
      <Compile Include="Assets\Scripts\PlayerInputControl.cs" />
      <Compile Include="Assets\Scripts\PlayerMoving.cs" />
      <Compile Include="Assets\Scripts\PortalControl.cs" />
+     <Compile Include="Assets\Scripts\SessionStoreControl.cs" />
      <Compile Include="Assets\Scripts\SkullControl.cs" />
      <Compile Include="Assets\Scripts\StarControl.cs" />
      <Compile Include="Assets\Scripts\SwordControl.cs" />

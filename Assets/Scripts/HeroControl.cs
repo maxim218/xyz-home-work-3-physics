@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,25 +7,16 @@ using UnityEngine.SceneManagement;
 public class HeroControl : MonoBehaviour {
     private int _sumValue = 0;
 
-    private bool _drawBtnFlag = true;
-
-    [SerializeField] private bool flagAllowSceneReload = false;
-    
-    private void OnGUI() {
-        // label with score
-        string content = "Count: " + _sumValue;
-        GUI.Box(new Rect(140, 20, 100, 26), content);
-
-        if (!flagAllowSceneReload) return;
-        
-        // reload scene btn
-        if (!_drawBtnFlag) return;
-        const string btnText = "Reload scene";
-        if (!GUI.Button(new Rect(260, 20, 150, 26), btnText)) return;
-        _drawBtnFlag = false;
-        StartCoroutine(LoadSceneAsync());
+    private void Start() {
+        GameObject saveObj = GameObject.Find("--X--X--SessionStore--X--X--");
+        SessionStoreControl script = saveObj.GetComponent<SessionStoreControl>();
+        _sumValue = script.MoneyStore;
     }
 
+    public int GetSumValue() {
+        return _sumValue;
+    }
+    
     public void NewLevelLoad() {
         StartCoroutine(LoadSceneAsync());
     }

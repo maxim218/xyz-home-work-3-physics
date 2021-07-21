@@ -18,4 +18,8 @@ public class ControlHealth : MonoBehaviour {
         string message = "Lives: " + lives;
         Debug.Log(message);
     }
+
+    public void ZeroHealth() {
+        lives = 0;
+    }
 }

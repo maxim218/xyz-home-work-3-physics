@@ -32,6 +32,17 @@ public class ChainSawControl : PosCopy {
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
+        // is hero
         if (collision.gameObject == _hero) _hero.GetComponent<ControlHealth>().ZeroHealth();
+        
+        // is knife
+        FlySwordControl script = collision.gameObject.GetComponent<FlySwordControl>();
+        if (!script) return;
+        GameObject knifeDead = Instantiate(prefabDeadKnife) as GameObject;
+        knifeDead.transform.position = collision.gameObject.transform.position;
+        knifeDead.GetComponent<SpriteRenderer>().flipX = !_mySpriteRenderer.flipX;
+        Destroy(collision.gameObject);
     }
+
+    [SerializeField] private GameObject prefabDeadKnife = null;
 }

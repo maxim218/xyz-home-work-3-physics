@@ -58,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AnimateAndDelete.cs" />
      <Compile Include="Assets\Scripts\AttackSword.cs" />
      <Compile Include="Assets\Scripts\BarrelControl.cs" />
      <Compile Include="Assets\Scripts\ChainSawControl.cs" />
@@ -66,12 +67,14 @@
      <Compile Include="Assets\Scripts\DustFabric.cs" />
      <Compile Include="Assets\Scripts\EnemyControl.cs" />
      <Compile Include="Assets\Scripts\FallSpeedControl.cs" />
+     <Compile Include="Assets\Scripts\FlySwordControl.cs" />
      <Compile Include="Assets\Scripts\FrameAnimationControl.cs" />
      <Compile Include="Assets\Scripts\Ground.cs" />
      <Compile Include="Assets\Scripts\GuiInfoRender.cs" />
      <Compile Include="Assets\Scripts\HeartLive.cs" />
      <Compile Include="Assets\Scripts\HeroAnimationControl.cs" />
      <Compile Include="Assets\Scripts\HeroControl.cs" />
+     <Compile Include="Assets\Scripts\HeroFire.cs" />
      <Compile Include="Assets\Scripts\HeroKnifeControl.cs" />
      <Compile Include="Assets\Scripts\MoneyControl.cs" />
      <Compile Include="Assets\Scripts\MovingMonstrControl.cs" />
@@ -84,6 +87,7 @@
      <Compile Include="Assets\Scripts\SkullControl.cs" />
      <Compile Include="Assets\Scripts\StarControl.cs" />
      <Compile Include="Assets\Scripts\SwordControl.cs" />
+     <Compile Include="Assets\Scripts\SwordInWallControl.cs" />
      <Compile Include="Assets\Scripts\ToggleElementControl.cs" />
      <Compile Include="Assets\Scripts\TwoPointsPatrol.cs" />
      <Compile Include="Assets\Scripts\WinGameControl.cs" />

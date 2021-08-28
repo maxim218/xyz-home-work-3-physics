@@ -61,7 +61,9 @@
      <Compile Include="Assets\Scripts\AnimateAndDelete.cs" />
      <Compile Include="Assets\Scripts\AttackSword.cs" />
      <Compile Include="Assets\Scripts\BarrelControl.cs" />
+     <Compile Include="Assets\Scripts\BulletOfGunControl.cs" />
      <Compile Include="Assets\Scripts\ChainSawControl.cs" />
+     <Compile Include="Assets\Scripts\ComponentGetter.cs" />
      <Compile Include="Assets\Scripts\ControlHealth.cs" />
      <Compile Include="Assets\Scripts\DustControl.cs" />
      <Compile Include="Assets\Scripts\DustFabric.cs" />
@@ -71,11 +73,13 @@
      <Compile Include="Assets\Scripts\FrameAnimationControl.cs" />
      <Compile Include="Assets\Scripts\Ground.cs" />
      <Compile Include="Assets\Scripts\GuiInfoRender.cs" />
+     <Compile Include="Assets\Scripts\GunControl.cs" />
      <Compile Include="Assets\Scripts\HeartLive.cs" />
      <Compile Include="Assets\Scripts\HeroAnimationControl.cs" />
      <Compile Include="Assets\Scripts\HeroControl.cs" />
      <Compile Include="Assets\Scripts\HeroFire.cs" />
      <Compile Include="Assets\Scripts\HeroKnifeControl.cs" />
+     <Compile Include="Assets\Scripts\ManagerOfGuns.cs" />
      <Compile Include="Assets\Scripts\MoneyControl.cs" />
      <Compile Include="Assets\Scripts\MovingMonstrControl.cs" />
      <Compile Include="Assets\Scripts\PistolControl.cs" />

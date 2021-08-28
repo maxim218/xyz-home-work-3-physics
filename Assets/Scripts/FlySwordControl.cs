@@ -50,6 +50,11 @@ public class FlySwordControl : MonoBehaviour {
         MovingMonstrControl script = hitObj.GetComponent<MovingMonstrControl>();
         if (script) script.KillRobotMethod();
     }
+
+    private static void IsGunControl(GameObject hitObj) {
+        GunControl script = hitObj.GetComponent<GunControl>();
+        if (script) script.GunKill();
+    }
     
     private void OnCollisionEnter2D(Collision2D collision) {
         // control having Ground
@@ -65,6 +70,7 @@ public class FlySwordControl : MonoBehaviour {
         
         // type of hit obj
         IsBarrelControl(hitObj);
+        IsGunControl(hitObj);
         IsMonstrControl(hitObj);
 
         // destroy

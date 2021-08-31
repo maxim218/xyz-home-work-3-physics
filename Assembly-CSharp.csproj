@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\BarrelControl.cs" />
      <Compile Include="Assets\Scripts\BulletOfGunControl.cs" />
      <Compile Include="Assets\Scripts\ChainSawControl.cs" />
+     <Compile Include="Assets\Scripts\CollectorPotionsControl.cs" />
      <Compile Include="Assets\Scripts\ComponentGetter.cs" />
      <Compile Include="Assets\Scripts\ControlHealth.cs" />
      <Compile Include="Assets\Scripts\DustControl.cs" />
@@ -79,6 +80,10 @@
      <Compile Include="Assets\Scripts\HeroControl.cs" />
      <Compile Include="Assets\Scripts\HeroFire.cs" />
      <Compile Include="Assets\Scripts\HeroKnifeControl.cs" />
+     <Compile Include="Assets\Scripts\InventoryMagicPotion.cs" />
+     <Compile Include="Assets\Scripts\InventoryMagicRender.cs" />
+     <Compile Include="Assets\Scripts\InventoryOfMagicPotions.cs" />
+     <Compile Include="Assets\Scripts\MagicPotionScript.cs" />
      <Compile Include="Assets\Scripts\ManagerOfGuns.cs" />
      <Compile Include="Assets\Scripts\MoneyControl.cs" />
      <Compile Include="Assets\Scripts\MovingMonstrControl.cs" />
@@ -87,6 +92,7 @@
      <Compile Include="Assets\Scripts\PlayerMoving.cs" />
      <Compile Include="Assets\Scripts\PortalControl.cs" />
      <Compile Include="Assets\Scripts\PosCopy.cs" />
+     <Compile Include="Assets\Scripts\PotionControl.cs" />
      <Compile Include="Assets\Scripts\SessionStoreControl.cs" />
      <Compile Include="Assets\Scripts\SkullControl.cs" />
      <Compile Include="Assets\Scripts\StarControl.cs" />

@@ -83,6 +83,7 @@
      <Compile Include="Assets\Scripts\InventoryMagicPotion.cs" />
      <Compile Include="Assets\Scripts\InventoryMagicRender.cs" />
      <Compile Include="Assets\Scripts\InventoryOfMagicPotions.cs" />
+     <Compile Include="Assets\Scripts\LinkerSounds.cs" />
      <Compile Include="Assets\Scripts\MagicPotionScript.cs" />
      <Compile Include="Assets\Scripts\ManagerOfGuns.cs" />
      <Compile Include="Assets\Scripts\MoneyControl.cs" />
@@ -95,6 +96,7 @@
      <Compile Include="Assets\Scripts\PotionControl.cs" />
      <Compile Include="Assets\Scripts\SessionStoreControl.cs" />
      <Compile Include="Assets\Scripts\SkullControl.cs" />
+     <Compile Include="Assets\Scripts\SoundControl.cs" />
      <Compile Include="Assets\Scripts\StarControl.cs" />
      <Compile Include="Assets\Scripts\SwordControl.cs" />
      <Compile Include="Assets\Scripts\SwordInWallControl.cs" />

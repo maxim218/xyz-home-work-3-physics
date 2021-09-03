@@ -20,5 +20,22 @@ public class CollectorPotionsControl : MonoBehaviour  {
         Debug.Log(msg);
         
         _inventory.ZeroCounts();
+        
+        if (_canChangeMusic) ChangeMusic();
+    }
+
+    private bool _canChangeMusic = true;
+    
+    private void ChangeMusic() {
+        // prohibit change
+        _canChangeMusic = false;
+        
+        // stop
+        SoundControl funnyMusic = LinkerSounds.DictionaryGetByKey("FunnyMusic");
+        if (funnyMusic) funnyMusic.StopSound();
+
+        // play
+        SoundControl endMusic = LinkerSounds.DictionaryGetByKey("EndMusic");
+        if (endMusic) endMusic.SoundPlayCircle();
     }
 }

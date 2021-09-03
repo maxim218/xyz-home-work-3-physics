@@ -31,6 +31,15 @@ public class PotionControl : MonoBehaviour {
         if (invStruct.numberCurrent >= invStruct.numberMaximum) return;
         const int delta = 1;
         _inventory.ChangeCountByKey(key, delta); 
+        SoundPlay();
         Destroy(gameObject);
+    }
+
+    private static void SoundPlay() {
+        const string nameLink = "PotionMusic";
+        SoundControl soundControl = LinkerSounds.DictionaryGetByKey(nameLink);
+        if (soundControl) {
+            soundControl.SoundPlayOnce();
+        }
     }
 }

@@ -55,6 +55,11 @@ public class FlySwordControl : MonoBehaviour {
         GunControl script = hitObj.GetComponent<GunControl>();
         if (script) script.GunKill();
     }
+
+    private static void IsBossHeart(GameObject hitObj) {
+        HeartBossControl script = hitObj.GetComponent<HeartBossControl>();
+        if (script) script.BossKill();
+    }
     
     private void OnCollisionEnter2D(Collision2D collision) {
         // control having Ground
@@ -72,6 +77,7 @@ public class FlySwordControl : MonoBehaviour {
         IsBarrelControl(hitObj);
         IsGunControl(hitObj);
         IsMonstrControl(hitObj);
+        IsBossHeart(hitObj);
 
         // destroy
         Destroy(gameObject);

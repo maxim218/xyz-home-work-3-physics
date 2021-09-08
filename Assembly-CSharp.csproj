@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\AnimateAndDelete.cs" />
      <Compile Include="Assets\Scripts\AttackSword.cs" />
      <Compile Include="Assets\Scripts\BarrelControl.cs" />
+     <Compile Include="Assets\Scripts\BossControl.cs" />
      <Compile Include="Assets\Scripts\BulletOfGunControl.cs" />
      <Compile Include="Assets\Scripts\ChainSawControl.cs" />
      <Compile Include="Assets\Scripts\CollectorPotionsControl.cs" />
@@ -70,11 +71,13 @@
      <Compile Include="Assets\Scripts\DustFabric.cs" />
      <Compile Include="Assets\Scripts\EnemyControl.cs" />
      <Compile Include="Assets\Scripts\FallSpeedControl.cs" />
+     <Compile Include="Assets\Scripts\FireBossControl.cs" />
      <Compile Include="Assets\Scripts\FlySwordControl.cs" />
      <Compile Include="Assets\Scripts\FrameAnimationControl.cs" />
      <Compile Include="Assets\Scripts\Ground.cs" />
      <Compile Include="Assets\Scripts\GuiInfoRender.cs" />
      <Compile Include="Assets\Scripts\GunControl.cs" />
+     <Compile Include="Assets\Scripts\HeartBossControl.cs" />
      <Compile Include="Assets\Scripts\HeartLive.cs" />
      <Compile Include="Assets\Scripts\HeroAnimationControl.cs" />
      <Compile Include="Assets\Scripts\HeroControl.cs" />
@@ -83,6 +86,7 @@
      <Compile Include="Assets\Scripts\InventoryMagicPotion.cs" />
      <Compile Include="Assets\Scripts\InventoryMagicRender.cs" />
      <Compile Include="Assets\Scripts\InventoryOfMagicPotions.cs" />
+     <Compile Include="Assets\Scripts\LineBossControl.cs" />
      <Compile Include="Assets\Scripts\LinkerSounds.cs" />
      <Compile Include="Assets\Scripts\MagicPotionScript.cs" />
      <Compile Include="Assets\Scripts\ManagerOfGuns.cs" />

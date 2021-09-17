@@ -65,4 +65,15 @@ public class SoundControl : MonoBehaviour {
     private void LateUpdate() {
         if (cameraObj) transform.position = cameraObj.transform.position;
     }
+
+    public void VolumeSet(int value) {
+        float volume = value / 100f;
+        _audioSource.volume = volume;
+    }
+
+    [SerializeField] private string type = string.Empty;
+
+    public string TypeGet() {
+        return type;
+    }
 }

@@ -621,6 +621,12 @@ MonoBehaviour:
   countKnife: 0
   flySwordPrefab: {fileID: 3005115790047399705, guid: a852fd9fa5c795c489fd5617b621b930,
     type: 3}
+--- !u!1 &238795726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8440070157063312675, guid: 75ba283d276b2644aba66772e9b82d02,
+    type: 3}
+  m_PrefabInstance: {fileID: 432202715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &269020877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -931,7 +937,7 @@ PrefabInstance:
     - target: {fileID: 8440070157063312702, guid: 75ba283d276b2644aba66772e9b82d02,
         type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75ba283d276b2644aba66772e9b82d02, type: 3}
@@ -1274,7 +1280,7 @@ PrefabInstance:
     - target: {fileID: 8440070157063312702, guid: 75ba283d276b2644aba66772e9b82d02,
         type: 3}
       propertyPath: m_Volume
-      value: 0.6
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75ba283d276b2644aba66772e9b82d02, type: 3}
@@ -1366,6 +1372,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1492,6 +1499,25 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4522ded4f6f5fa0459ef9c42e8d5dcc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrayElementsList:
+  - soundGameObject: {fileID: 1488865402}
+    typeSound: 0
+  - soundGameObject: {fileID: 238795726}
+    typeSound: 1
+  - soundGameObject: {fileID: 1490103975}
+    typeSound: 0
 --- !u!1 &974636362
 GameObject:
   m_ObjectHideFlags: 0
@@ -2225,6 +2251,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fcfa1864d4265e479cfc007aaacedf5, type: 3}
+--- !u!1 &1488865402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8440070157063312675, guid: 75ba283d276b2644aba66772e9b82d02,
+    type: 3}
+  m_PrefabInstance: {fileID: 8440070156502323404}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1490103975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8440070157063312675, guid: 75ba283d276b2644aba66772e9b82d02,
+    type: 3}
+  m_PrefabInstance: {fileID: 871418521}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1502542378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3324,7 +3362,7 @@ PrefabInstance:
     - target: {fileID: 8440070157063312702, guid: 75ba283d276b2644aba66772e9b82d02,
         type: 3}
       propertyPath: m_Volume
-      value: 0.4
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75ba283d276b2644aba66772e9b82d02, type: 3}

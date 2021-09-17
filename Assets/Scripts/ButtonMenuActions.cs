@@ -9,12 +9,14 @@ public class ButtonMenuActions : MonoBehaviour {
     [SerializeField] private GameObject menuOptions = null;
     
     public void OperationStart() {
+        ClickSound();
         const string msg = "Operation - Start";
         Debug.Log(msg);
         StartCoroutine(LoadSceneAsync());
     }
 
     public void OperationOptions() {
+        ClickSound();
         const string msg = "Operation - Options";
         Debug.Log(msg);
         const bool flag = false;
@@ -22,6 +24,8 @@ public class ButtonMenuActions : MonoBehaviour {
     }
 
     public void OperationBackToMainMenu() {
+        ClickSound();
+        LocalStorageControl.GetScriptStorage().SaveToDisk();
         const string msg = "Operation - Back To Main Menu";
         Debug.Log(msg);
         const bool flag = true;
@@ -29,12 +33,13 @@ public class ButtonMenuActions : MonoBehaviour {
     }
     
     public void OperationExit() {
+        ClickSound();
         const string msg = "Operation - Exit";
         Debug.Log(msg);
     }
 
     private static IEnumerator LoadSceneAsync() {
-        const string nameScene = "BossScene";
+        const string nameScene = "InventoryScene";
         AsyncOperation operation = SceneManager.LoadSceneAsync(nameScene);
         while(!operation.isDone) yield return new WaitForSeconds(1);
     }
@@ -56,5 +61,13 @@ public class ButtonMenuActions : MonoBehaviour {
     private void Start() {
         const bool flag = true;
         ChangeWindows(flag);
+    }
+
+    private static void ClickSound() {
+        Type type = typeof(SoundControl);
+        if (!(FindObjectsOfType(type) is SoundControl[] arr)) return;
+        foreach (SoundControl soundControl in arr) 
+            if ("SFX" == soundControl.TypeGet()) 
+                soundControl.SoundPlayOnce();
     }
 }

@@ -76,6 +76,7 @@
      <Compile Include="Assets\Scripts\FireBossControl.cs" />
      <Compile Include="Assets\Scripts\FlySwordControl.cs" />
      <Compile Include="Assets\Scripts\FrameAnimationControl.cs" />
+     <Compile Include="Assets\Scripts\GameSoundInit.cs" />
      <Compile Include="Assets\Scripts\Ground.cs" />
      <Compile Include="Assets\Scripts\GuiInfoRender.cs" />
      <Compile Include="Assets\Scripts\GunControl.cs" />
@@ -90,6 +91,7 @@
      <Compile Include="Assets\Scripts\InventoryOfMagicPotions.cs" />
      <Compile Include="Assets\Scripts\LineBossControl.cs" />
      <Compile Include="Assets\Scripts\LinkerSounds.cs" />
+     <Compile Include="Assets\Scripts\LocalStorageControl.cs" />
      <Compile Include="Assets\Scripts\MagicPotionScript.cs" />
      <Compile Include="Assets\Scripts\ManagerOfGuns.cs" />
      <Compile Include="Assets\Scripts\MoneyControl.cs" />
@@ -102,12 +104,14 @@
      <Compile Include="Assets\Scripts\PotionControl.cs" />
      <Compile Include="Assets\Scripts\SessionStoreControl.cs" />
      <Compile Include="Assets\Scripts\SkullControl.cs" />
+     <Compile Include="Assets\Scripts\SliderControl.cs" />
      <Compile Include="Assets\Scripts\SoundControl.cs" />
      <Compile Include="Assets\Scripts\StarControl.cs" />
      <Compile Include="Assets\Scripts\SwordControl.cs" />
      <Compile Include="Assets\Scripts\SwordInWallControl.cs" />
      <Compile Include="Assets\Scripts\ToggleElementControl.cs" />
      <Compile Include="Assets\Scripts\TwoPointsPatrol.cs" />
+     <Compile Include="Assets\Scripts\VolumeControlMenu.cs" />
      <Compile Include="Assets\Scripts\WinGameControl.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/PROJECTS/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

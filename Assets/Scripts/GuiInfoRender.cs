@@ -11,7 +11,11 @@ public class GuiInfoRender : MonoBehaviour {
         _controlHealth = gameObject.GetComponent<ControlHealth>();
     }
 
+    [SerializeField] private bool renderFlag = true;
+    
     private void OnGUI() {
+        if (!renderFlag) return;
+        
         int money = _heroControl.GetSumValue();
         GUI.Box(new Rect(110, 30, 100, 30), "Money: " + money);
 

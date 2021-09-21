@@ -102,6 +102,7 @@
      <Compile Include="Assets\Scripts\PortalControl.cs" />
      <Compile Include="Assets\Scripts\PosCopy.cs" />
      <Compile Include="Assets\Scripts\PotionControl.cs" />
+     <Compile Include="Assets\Scripts\PotionUiControl.cs" />
      <Compile Include="Assets\Scripts\SessionStoreControl.cs" />
      <Compile Include="Assets\Scripts\SkullControl.cs" />
      <Compile Include="Assets\Scripts\SliderControl.cs" />

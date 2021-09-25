@@ -77,6 +77,7 @@
      <Compile Include="Assets\Scripts\FlySwordControl.cs" />
      <Compile Include="Assets\Scripts\FrameAnimationControl.cs" />
      <Compile Include="Assets\Scripts\GameSoundInit.cs" />
+     <Compile Include="Assets\Scripts\GranateControl.cs" />
      <Compile Include="Assets\Scripts\Ground.cs" />
      <Compile Include="Assets\Scripts\GuiInfoRender.cs" />
      <Compile Include="Assets\Scripts\GunControl.cs" />
@@ -86,6 +87,7 @@
      <Compile Include="Assets\Scripts\HeroControl.cs" />
      <Compile Include="Assets\Scripts\HeroFire.cs" />
      <Compile Include="Assets\Scripts\HeroKnifeControl.cs" />
+     <Compile Include="Assets\Scripts\InventoryActionsManager.cs" />
      <Compile Include="Assets\Scripts\InventoryMagicPotion.cs" />
      <Compile Include="Assets\Scripts\InventoryMagicRender.cs" />
      <Compile Include="Assets\Scripts\InventoryOfMagicPotions.cs" />
@@ -94,6 +96,8 @@
      <Compile Include="Assets\Scripts\LocalStorageControl.cs" />
      <Compile Include="Assets\Scripts\MagicPotionScript.cs" />
      <Compile Include="Assets\Scripts\ManagerOfGuns.cs" />
+     <Compile Include="Assets\Scripts\MenuUiGameControl.cs" />
+     <Compile Include="Assets\Scripts\MenuUseElement.cs" />
      <Compile Include="Assets\Scripts\MoneyControl.cs" />
      <Compile Include="Assets\Scripts\MovingMonstrControl.cs" />
      <Compile Include="Assets\Scripts\PistolControl.cs" />

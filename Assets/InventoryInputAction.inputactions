@@ -1,0 +1,52 @@
+{
+    "name": "InventoryInputAction",
+    "maps": [
+        {
+            "name": "Map",
+            "id": "47257242-a234-4c34-a8fd-44a992fe2a65",
+            "actions": [
+                {
+                    "name": "Actions",
+                    "type": "Button",
+                    "id": "255ed748-f588-423f-a9bf-665f3e9c3e7e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Use Item Action",
+                    "type": "Button",
+                    "id": "8bbc8513-78fa-4ebf-ac6a-9899047c5679",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7e69200a-54a5-4147-9fc1-c1a7dfb1f32e",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Actions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "62d57a77-03e3-4479-b5a1-7de5372c2048",
+                    "path": "<Keyboard>/u",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Use Item Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

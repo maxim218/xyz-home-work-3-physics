@@ -9,8 +9,16 @@ public class ControlHealth : MonoBehaviour {
     
     private void Start() {
         GameObject saveObj = GameObject.Find("--X--X--SessionStore--X--X--");
-        SessionStoreControl script = saveObj.GetComponent<SessionStoreControl>();
-        lives = script.HealthStore;
+        try
+        {
+            SessionStoreControl script = saveObj.GetComponent<SessionStoreControl>();
+            lives = script.HealthStore;
+        }
+        catch
+        {
+            const string warningMessage = "Session Store Control was not found";
+            Debug.LogWarning(warningMessage);
+        }
     }
 
     public void AddLives(int value) {

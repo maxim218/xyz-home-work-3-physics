@@ -9,8 +9,16 @@ public class HeroControl : MonoBehaviour {
 
     private void Start() {
         GameObject saveObj = GameObject.Find("--X--X--SessionStore--X--X--");
-        SessionStoreControl script = saveObj.GetComponent<SessionStoreControl>();
-        _sumValue = script.MoneyStore;
+        try
+        {
+            SessionStoreControl script = saveObj.GetComponent<SessionStoreControl>();
+            _sumValue = script.MoneyStore;
+        }
+        catch
+        {
+            const string warningMessage = "Session Store Control was not found";
+            Debug.LogWarning(warningMessage);
+        }
     }
 
     public int GetSumValue() {

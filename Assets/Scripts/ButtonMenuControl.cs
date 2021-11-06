@@ -5,6 +5,15 @@ using UnityEngine.UI;
 
 public class ButtonMenuControl : MonoBehaviour {
     [SerializeField] private string buttonText = string.Empty;
+
+    public void SetButtonText(string textContent)
+    {
+        const string keyChildText = "Text";
+        GameObject childText = gameObject.transform.Find(keyChildText).gameObject;
+        Text script = childText.GetComponent<Text>();
+        script.text = textContent.Trim();
+        buttonText = textContent.Trim();
+    }
     
     private void Start() {
         // set btn text

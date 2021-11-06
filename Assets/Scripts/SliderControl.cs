@@ -6,6 +6,11 @@ using UnityEngine.UI;
 
 public class SliderControl : MonoBehaviour {
     [SerializeField] private string prefixString = string.Empty;
+
+    public void SetPrefixString(string prefixValue)
+    {
+        prefixString = prefixValue;
+    }
     
     [SerializeField] private GameObject renderTextObj = null;
 

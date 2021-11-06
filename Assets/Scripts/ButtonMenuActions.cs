@@ -39,7 +39,7 @@ public class ButtonMenuActions : MonoBehaviour {
     }
 
     private static IEnumerator LoadSceneAsync() {
-        const string nameScene = "InventoryScene";
+        const string nameScene = "SampleScene";
         AsyncOperation operation = SceneManager.LoadSceneAsync(nameScene);
         while(!operation.isDone) yield return new WaitForSeconds(1);
     }

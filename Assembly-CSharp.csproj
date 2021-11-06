@@ -95,6 +95,9 @@
      <Compile Include="Assets\Scripts\LineBossControl.cs" />
      <Compile Include="Assets\Scripts\LinkerSounds.cs" />
      <Compile Include="Assets\Scripts\LocalStorageControl.cs" />
+     <Compile Include="Assets\Scripts\LocaleChangeManager.cs" />
+     <Compile Include="Assets\Scripts\LocaleManager.cs" />
+     <Compile Include="Assets\Scripts\LocalizationDontDestroy.cs" />
      <Compile Include="Assets\Scripts\MagicPotionScript.cs" />
      <Compile Include="Assets\Scripts\ManagerOfGuns.cs" />
      <Compile Include="Assets\Scripts\MenuUiGameControl.cs" />
@@ -121,7 +124,11 @@
      <Compile Include="Assets\Scripts\VolumeControlMenu.cs" />
      <Compile Include="Assets\Scripts\WinGameControl.cs" />
      <None Include="Assets\Resources\GirlDialog.txt" />
+     <None Include="Assets\Resources\russian.txt" />
      <None Include="Assets\Resources\FlowerDialog.txt" />
+     <None Include="Assets\Resources\FlowerDialog_rus.txt" />
+     <None Include="Assets\Resources\GirlDialog_rus.txt" />
+     <None Include="Assets\Resources\english.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -139,6 +146,9 @@
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.EditorCoroutines.Editor">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>

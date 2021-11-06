@@ -1,0 +1,10 @@
+{
+    "contentArray": [
+        {"key": "key_start_key", "translate": "Start game"},
+        {"key": "key_options_key", "translate": "Game options"},
+        {"key": "key_exit_key", "translate": "Exit game"},
+        {"key": "key_go_menu_key", "translate": "Main menu"},
+        {"key": "key_music_key", "translate": "Music volume - "},
+        {"key": "key_sfx_key", "translate": "SFX volume - "}
+    ]
+}

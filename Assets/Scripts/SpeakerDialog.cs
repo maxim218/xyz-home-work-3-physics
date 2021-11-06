@@ -25,4 +25,14 @@ public class SpeakerDialog : MonoBehaviour
         dialogControllerComponent.SetCurrentDialog(dialogName);
         dialogControllerComponent.DialogBegin();
     }
+
+    private void Start()
+    {
+        LocalizationDontDestroy script = (LocalizationDontDestroy)FindObjectOfType(typeof(LocalizationDontDestroy));
+        if (script) {
+            if (script.GetLocalizationType() == "RUS") {
+                dialogName += "_rus";
+            }
+        }
+    }
 }

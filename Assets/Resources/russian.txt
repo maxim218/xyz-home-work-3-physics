@@ -1,0 +1,10 @@
+{
+    "contentArray": [
+        {"key": "key_start_key", "translate": "Начать игру"},
+        {"key": "key_options_key", "translate": "Настройки игры"},
+        {"key": "key_exit_key", "translate": "Выход из игры"},
+        {"key": "key_go_menu_key", "translate": "Главное меню"},
+        {"key": "key_music_key", "translate": "Музыка игры - "},
+        {"key": "key_sfx_key", "translate": "Эффекты игры - "}
+    ]
+}

@@ -60,12 +60,17 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AnimateAndDelete.cs" />
      <Compile Include="Assets\Scripts\AttackSword.cs" />
+     <Compile Include="Assets\Scripts\BackgroundMove\BackgroundControl.cs" />
      <Compile Include="Assets\Scripts\BarrelControl.cs" />
      <Compile Include="Assets\Scripts\BossControl.cs" />
      <Compile Include="Assets\Scripts\BulletOfGunControl.cs" />
      <Compile Include="Assets\Scripts\ButtonMenuActions.cs" />
      <Compile Include="Assets\Scripts\ButtonMenuControl.cs" />
      <Compile Include="Assets\Scripts\ChainSawControl.cs" />
+     <Compile Include="Assets\Scripts\CheckPoints\BonusControl.cs" />
+     <Compile Include="Assets\Scripts\CheckPoints\CheckPointsController.cs" />
+     <Compile Include="Assets\Scripts\CheckPoints\EnemyContol.cs" />
+     <Compile Include="Assets\Scripts\CheckPoints\PlaceCheckPoint.cs" />
      <Compile Include="Assets\Scripts\CollectorPotionsControl.cs" />
      <Compile Include="Assets\Scripts\ComponentGetter.cs" />
      <Compile Include="Assets\Scripts\ControlHealth.cs" />

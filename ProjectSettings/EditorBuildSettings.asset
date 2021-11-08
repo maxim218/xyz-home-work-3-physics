@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InventoryScene.unity
     guid: 0da5654bce22ad145be5bc5009f58bcd
+  - enabled: 1
+    path: Assets/Scenes/CheckPointScene.unity
+    guid: fa7ee3a4f39728745b204b3130ba0d4d
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b18cf7a74f82f24428f6bb1eeec824d1,
       type: 2}

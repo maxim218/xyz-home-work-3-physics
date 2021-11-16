@@ -18,6 +18,16 @@ public class PlayerMoving : MonoBehaviour {
     [SerializeField] private float horizontalSpeed = 0f;
     [SerializeField] private float forceVertical = 0f;
 
+    public void SetForceVertical(float val)
+    {
+        forceVertical = val;
+    }
+
+    public void SetHorizontalSpeed(float hor)
+    {
+        horizontalSpeed = hor;
+    }
+    
     private HeroAnimationControl _heroAnimationControl = null;
     private SpriteRenderer _spriteRenderer = null;
     private ControlHealth _controlHealth = null;

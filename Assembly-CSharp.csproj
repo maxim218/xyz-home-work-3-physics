@@ -58,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ActivatorPerks.cs" />
      <Compile Include="Assets\Scripts\AnimateAndDelete.cs" />
      <Compile Include="Assets\Scripts\AttackSword.cs" />
      <Compile Include="Assets\Scripts\BackgroundMove\BackgroundControl.cs" />
@@ -109,6 +110,7 @@
      <Compile Include="Assets\Scripts\MenuUseElement.cs" />
      <Compile Include="Assets\Scripts\MoneyControl.cs" />
      <Compile Include="Assets\Scripts\MovingMonstrControl.cs" />
+     <Compile Include="Assets\Scripts\PerksShop.cs" />
      <Compile Include="Assets\Scripts\PistolControl.cs" />
      <Compile Include="Assets\Scripts\PlayerInputControl.cs" />
      <Compile Include="Assets\Scripts\PlayerMoving.cs" />
@@ -117,6 +119,7 @@
      <Compile Include="Assets\Scripts\PotionControl.cs" />
      <Compile Include="Assets\Scripts\PotionUiControl.cs" />
      <Compile Include="Assets\Scripts\SessionStoreControl.cs" />
+     <Compile Include="Assets\Scripts\ShopHitController.cs" />
      <Compile Include="Assets\Scripts\SkullControl.cs" />
      <Compile Include="Assets\Scripts\SliderControl.cs" />
      <Compile Include="Assets\Scripts\SoundControl.cs" />
@@ -124,6 +127,7 @@
      <Compile Include="Assets\Scripts\StarControl.cs" />
      <Compile Include="Assets\Scripts\SwordControl.cs" />
      <Compile Include="Assets\Scripts\SwordInWallControl.cs" />
+     <Compile Include="Assets\Scripts\TableSlotControl.cs" />
      <Compile Include="Assets\Scripts\ToggleElementControl.cs" />
      <Compile Include="Assets\Scripts\TwoPointsPatrol.cs" />
      <Compile Include="Assets\Scripts\VolumeControlMenu.cs" />

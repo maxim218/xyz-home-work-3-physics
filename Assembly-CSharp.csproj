@@ -80,6 +80,7 @@
      <Compile Include="Assets\Scripts\DustFabric.cs" />
      <Compile Include="Assets\Scripts\EnemyControl.cs" />
      <Compile Include="Assets\Scripts\FallSpeedControl.cs" />
+     <Compile Include="Assets\Scripts\FireBallControl.cs" />
      <Compile Include="Assets\Scripts\FireBossControl.cs" />
      <Compile Include="Assets\Scripts\FlySwordControl.cs" />
      <Compile Include="Assets\Scripts\FrameAnimationControl.cs" />
@@ -92,6 +93,7 @@
      <Compile Include="Assets\Scripts\HeartLive.cs" />
      <Compile Include="Assets\Scripts\HeroAnimationControl.cs" />
      <Compile Include="Assets\Scripts\HeroControl.cs" />
+     <Compile Include="Assets\Scripts\HeroCreatingFireBalls.cs" />
      <Compile Include="Assets\Scripts\HeroFire.cs" />
      <Compile Include="Assets\Scripts\HeroKnifeControl.cs" />
      <Compile Include="Assets\Scripts\InventoryActionsManager.cs" />
@@ -109,7 +111,9 @@
      <Compile Include="Assets\Scripts\MenuUiGameControl.cs" />
      <Compile Include="Assets\Scripts\MenuUseElement.cs" />
      <Compile Include="Assets\Scripts\MoneyControl.cs" />
+     <Compile Include="Assets\Scripts\MoneyForShopControl.cs" />
      <Compile Include="Assets\Scripts\MovingMonstrControl.cs" />
+     <Compile Include="Assets\Scripts\PerkDevelopItem.cs" />
      <Compile Include="Assets\Scripts\PerksShop.cs" />
      <Compile Include="Assets\Scripts\PistolControl.cs" />
      <Compile Include="Assets\Scripts\PlayerInputControl.cs" />
@@ -118,6 +122,7 @@
      <Compile Include="Assets\Scripts\PosCopy.cs" />
      <Compile Include="Assets\Scripts\PotionControl.cs" />
      <Compile Include="Assets\Scripts\PotionUiControl.cs" />
+     <Compile Include="Assets\Scripts\SectorLevelDevelop.cs" />
      <Compile Include="Assets\Scripts\SessionStoreControl.cs" />
      <Compile Include="Assets\Scripts\ShopHitController.cs" />
      <Compile Include="Assets\Scripts\SkullControl.cs" />

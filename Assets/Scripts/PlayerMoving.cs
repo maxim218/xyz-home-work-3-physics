@@ -27,6 +27,16 @@ public class PlayerMoving : MonoBehaviour {
     {
         horizontalSpeed = hor;
     }
+
+    public void PerkImproveHorizontalSpeed(float value)
+    {
+        horizontalSpeed += value;
+    }
+
+    public void PerkImproveForceVertical(float value)
+    {
+        forceVertical += value;
+    }
     
     private HeroAnimationControl _heroAnimationControl = null;
     private SpriteRenderer _spriteRenderer = null;

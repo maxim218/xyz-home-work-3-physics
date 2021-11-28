@@ -13,6 +13,8 @@ public class HeroCreatingFireBalls : MonoBehaviour
         Vector3 position = transform.position;
         component.SetPosition(position.x, position.y);
         component.SetScale(_scale);
+        component.MakeFlyNearObjects();
+        component.KillAfterTime();
     }
 
     private float _scale = 1;

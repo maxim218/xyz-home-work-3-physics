@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\AttackSword.cs" />
      <Compile Include="Assets\Scripts\BackgroundMove\BackgroundControl.cs" />
      <Compile Include="Assets\Scripts\BarrelControl.cs" />
+     <Compile Include="Assets\Scripts\BatteryPrefabControl.cs" />
      <Compile Include="Assets\Scripts\BossControl.cs" />
      <Compile Include="Assets\Scripts\BulletOfGunControl.cs" />
      <Compile Include="Assets\Scripts\ButtonMenuActions.cs" />
@@ -100,6 +101,7 @@
      <Compile Include="Assets\Scripts\InventoryMagicPotion.cs" />
      <Compile Include="Assets\Scripts\InventoryMagicRender.cs" />
      <Compile Include="Assets\Scripts\InventoryOfMagicPotions.cs" />
+     <Compile Include="Assets\Scripts\LampHeroControl.cs" />
      <Compile Include="Assets\Scripts\LineBossControl.cs" />
      <Compile Include="Assets\Scripts\LinkerSounds.cs" />
      <Compile Include="Assets\Scripts\LocalStorageControl.cs" />
@@ -193,6 +195,33 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Editor">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Editor">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ShaderGraph.Editor">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

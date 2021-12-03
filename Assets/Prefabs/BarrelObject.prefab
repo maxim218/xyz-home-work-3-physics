@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyA: {fileID: 8734148621519302791, guid: 588313d75c0921a4e98694060686151a, type: 3}
   moneyB: {fileID: 7641434001738796241, guid: a71ea398a12f49847912024442b4eb3f, type: 3}
+  probabilityValue: 50
   sprite3: {fileID: 21300000, guid: 3634f2308bc56364991a4bfde6f6fbd3, type: 3}
   sprite2: {fileID: 21300000, guid: dd1b985c114148746892a70e526d6df4, type: 3}
   sprite1: {fileID: 21300000, guid: 713414f974d99814fb3aa16fab6930c8, type: 3}

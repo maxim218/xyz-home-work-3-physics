@@ -7,11 +7,25 @@ using UnityEngine.SceneManagement;
 public class ButtonMenuActions : MonoBehaviour {
     [SerializeField] private GameObject menuMain = null;
     [SerializeField] private GameObject menuOptions = null;
+    [SerializeField] private GameObject wndLoading = null;
+    
+    private void HideWindows()
+    {
+        menuMain.SetActive(false);
+        menuOptions.SetActive(false);
+    }
+
+    private void ShowLoadingWindow()
+    {
+        wndLoading.SetActive(true);
+    }
     
     public void OperationStart() {
         ClickSound();
         const string msg = "Operation - Start";
         Debug.Log(msg);
+        HideWindows();
+        ShowLoadingWindow();
         StartCoroutine(LoadSceneAsync());
     }
 
@@ -38,8 +52,12 @@ public class ButtonMenuActions : MonoBehaviour {
         Debug.Log(msg);
     }
 
-    private static IEnumerator LoadSceneAsync() {
-        const string nameScene = "SampleScene";
+    private static IEnumerator LoadSceneAsync()
+    {
+        const float loadingWaitTimeDemo = 2.5f;
+        yield return new WaitForSeconds(loadingWaitTimeDemo);
+        
+        const string nameScene = "DevelopPerksLevel";
         AsyncOperation operation = SceneManager.LoadSceneAsync(nameScene);
         while(!operation.isDone) yield return new WaitForSeconds(1);
     }

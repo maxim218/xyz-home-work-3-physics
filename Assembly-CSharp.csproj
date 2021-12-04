@@ -126,6 +126,7 @@
      <Compile Include="Assets\Scripts\PotionUiControl.cs" />
      <Compile Include="Assets\Scripts\SectorLevelDevelop.cs" />
      <Compile Include="Assets\Scripts\SessionStoreControl.cs" />
+     <Compile Include="Assets\Scripts\ShakeCameraControl.cs" />
      <Compile Include="Assets\Scripts\ShopHitController.cs" />
      <Compile Include="Assets\Scripts\SkullControl.cs" />
      <Compile Include="Assets\Scripts\SliderControl.cs" />

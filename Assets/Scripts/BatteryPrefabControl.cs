@@ -10,6 +10,7 @@ public class BatteryPrefabControl : MonoBehaviour
     {
         if (col.gameObject.name.Trim() == heroName)
         {
+            ShakeCameraControl.CameraShake();
             LampHeroControl script = FindObjectOfType<LampHeroControl>();
             if (script != null) script.SetEnergyNumber(1);
             Destroy(gameObject);

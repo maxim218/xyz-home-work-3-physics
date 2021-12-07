@@ -19,8 +19,14 @@ public class InventoryMagicRender : MonoBehaviour {
     [SerializeField] private int heightBottom = 0;
     [SerializeField] private int yTop = 0;
     [SerializeField] private int yBottom = 0;
+
+    [SerializeField] private bool allowRender = true;
     
-    private void OnGUI() {
+    private void OnGUI()
+    {
+        if (!allowRender)
+            return;
+        
         if (arrayKeys == null) return;
         if (arrayKeys.Length == 0) return;
 

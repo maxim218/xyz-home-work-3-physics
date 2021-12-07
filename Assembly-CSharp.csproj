@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\DustFabric.cs" />
      <Compile Include="Assets\Scripts\EnemyControl.cs" />
      <Compile Include="Assets\Scripts\FallSpeedControl.cs" />
+     <Compile Include="Assets\Scripts\FightBossControl.cs" />
      <Compile Include="Assets\Scripts\FireBallControl.cs" />
      <Compile Include="Assets\Scripts\FireBossControl.cs" />
      <Compile Include="Assets\Scripts\FlySwordControl.cs" />

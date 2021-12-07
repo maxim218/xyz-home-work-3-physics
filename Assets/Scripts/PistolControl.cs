@@ -20,7 +20,7 @@ public class PistolControl : MonoBehaviour {
    private IEnumerator AsyncFire() {
       yield return new WaitForSeconds(startDelayValue);
       while (circleFire) {
-         const float waitValue = 3f;
+         const float waitValue = 1f;
          yield return new WaitForSeconds(waitValue);
          GameObject bullet = CreateBullet(transform.position);
          FireForce(bullet);

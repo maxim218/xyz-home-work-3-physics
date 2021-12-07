@@ -30,7 +30,8 @@ public class PotionControl : MonoBehaviour {
         InventoryMagicPotion invStruct = _inventory.GetByKey(key);
         if (invStruct.numberCurrent >= invStruct.numberMaximum) return;
         const int delta = 1;
-        _inventory.ChangeCountByKey(key, delta); 
+        _inventory.ChangeCountByKey(key, delta);
+        PotionForBoss();
         SoundPlay();
         Destroy(gameObject);
     }
@@ -41,5 +42,12 @@ public class PotionControl : MonoBehaviour {
         if (soundControl) {
             soundControl.SoundPlayOnce();
         }
+    }
+
+    private static void PotionForBoss()
+    {
+        FightBossControl script = FindObjectOfType<FightBossControl>();
+        if (script != null) 
+            script.NeedChangeYes();
     }
 }

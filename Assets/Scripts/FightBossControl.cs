@@ -12,11 +12,19 @@ public enum BossState
 
 public class FightBossControl : MonoBehaviour
 {
+    [SerializeField] private WaterBossControl waterBossControlComponent = null;
+    
     [SerializeField] private Animator animatorComponent = null;
     [SerializeField] private BossState bossState = BossState.EmptyNotSet;
     [SerializeField] private bool needChangeState = false;
     [SerializeField] private int lives = 3;
     [SerializeField] private Text victoryLabel = null;
+
+    private void WaterBegin()
+    {
+        if (waterBossControlComponent != null)
+            waterBossControlComponent.WaterAttack();
+    }
     
     private void SetIdleAnim()
     {
@@ -72,6 +80,7 @@ public class FightBossControl : MonoBehaviour
     public void NeedChangeYes()
     {
         needChangeState = true;
+        WaterBegin();
         lives -= 1;
         if (lives <= 0)
         {

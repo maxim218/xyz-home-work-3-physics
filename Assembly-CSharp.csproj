@@ -140,6 +140,7 @@
      <Compile Include="Assets\Scripts\ToggleElementControl.cs" />
      <Compile Include="Assets\Scripts\TwoPointsPatrol.cs" />
      <Compile Include="Assets\Scripts\VolumeControlMenu.cs" />
+     <Compile Include="Assets\Scripts\WaterBossControl.cs" />
      <Compile Include="Assets\Scripts\WinGameControl.cs" />
      <None Include="Assets\Resources\GirlDialog.txt" />
      <None Include="Assets\Resources\russian.txt" />

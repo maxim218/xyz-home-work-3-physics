@@ -144,6 +144,15 @@
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.MemoryProfiler">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.MemoryProfiler.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.MemoryProfiler.Editor.MemoryProfilerModule">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.MemoryProfiler.Editor.MemoryProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.MemoryProfiler.Editor">
+ <HintPath>C:/Users/m.kolotovkin/Desktop/xyz-home-work-3-physics/Library/ScriptAssemblies/Unity.MemoryProfiler.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>

@@ -57,7 +57,7 @@ public class ButtonMenuActions : MonoBehaviour {
         const float loadingWaitTimeDemo = 2.5f;
         yield return new WaitForSeconds(loadingWaitTimeDemo);
         
-        const string nameScene = "DevelopPerksLevel";
+        const string nameScene = "LevelA";
         AsyncOperation operation = SceneManager.LoadSceneAsync(nameScene);
         while(!operation.isDone) yield return new WaitForSeconds(1);
     }

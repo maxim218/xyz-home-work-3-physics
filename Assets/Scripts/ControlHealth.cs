@@ -25,9 +25,17 @@ public class ControlHealth : MonoBehaviour {
         lives += value;
         string message = "Lives: " + lives;
         Debug.Log(message);
+        DeathControl();
     }
 
     public void ZeroHealth() {
         lives = 0;
+        DeathControl();
+    }
+
+    private void DeathControl()
+    {
+        if (lives <= 0)
+            GoMenuScript.MainMenuMove();
     }
 }

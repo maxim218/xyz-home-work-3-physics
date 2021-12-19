@@ -30,7 +30,7 @@ public class HeroControl : MonoBehaviour {
     }
     
     private static IEnumerator LoadSceneAsync() {
-        const string sceneNameString = "SampleScene";
+        const string sceneNameString = "FightWithBossScene";
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneNameString);
         while(!operation.isDone) yield return new WaitForSeconds(1);
     }

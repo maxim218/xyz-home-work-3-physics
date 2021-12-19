@@ -87,6 +87,7 @@
      <Compile Include="Assets\Scripts\FlySwordControl.cs" />
      <Compile Include="Assets\Scripts\FrameAnimationControl.cs" />
      <Compile Include="Assets\Scripts\GameSoundInit.cs" />
+     <Compile Include="Assets\Scripts\GoMenuScript.cs" />
      <Compile Include="Assets\Scripts\GranateControl.cs" />
      <Compile Include="Assets\Scripts\Ground.cs" />
      <Compile Include="Assets\Scripts\GuiInfoRender.cs" />

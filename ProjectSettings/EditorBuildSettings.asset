@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 70de6995356305d4aa509594c7e9b84b
+  - enabled: 1
     path: Assets/Scenes/LevelA.unity
     guid: 50a69979e1e34bb489e72f4cefb4dc19
   - enabled: 1
@@ -26,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DevelopPerksLevel.unity
     guid: e6f7e436a01a6374681f3281ea901fc7
+  - enabled: 1
+    path: Assets/Scenes/FightWithBossScene.unity
+    guid: 7c5f0b337e2c77b43ba052245185b2f0
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b18cf7a74f82f24428f6bb1eeec824d1,
       type: 2}

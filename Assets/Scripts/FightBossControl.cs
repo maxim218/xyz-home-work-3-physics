@@ -84,6 +84,7 @@ public class FightBossControl : MonoBehaviour
         lives -= 1;
         if (lives <= 0)
         {
+            GoMenuScript.MainMenuMove();
             victoryLabel.gameObject.SetActive(true);
             Destroy(gameObject);
         }

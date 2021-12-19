@@ -50,6 +50,7 @@ public class ButtonMenuActions : MonoBehaviour {
         ClickSound();
         const string msg = "Operation - Exit";
         Debug.Log(msg);
+        Application.Quit();
     }
 
     private static IEnumerator LoadSceneAsync()

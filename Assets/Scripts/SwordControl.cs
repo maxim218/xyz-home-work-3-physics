@@ -10,10 +10,19 @@ public class SwordControl : MonoBehaviour {
         _hero = heroControl.gameObject;
     }
 
+    [SerializeField] private GameObject btnForAttack = null;
+    
+    private void ButtonAttackActivate()
+    {
+        if (btnForAttack != null)
+            btnForAttack.SetActive(true);
+    }
+    
     private void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject != _hero) return;
         HeroKnifeControl script = _hero.GetComponent<HeroKnifeControl>();
         script.CatchKnife();
+        ButtonAttackActivate();
         SetHeroKnifeCount(_hero);
         Destroy(gameObject);
     }

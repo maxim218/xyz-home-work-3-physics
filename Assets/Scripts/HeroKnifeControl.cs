@@ -31,6 +31,22 @@ public class HeroKnifeControl : MonoBehaviour {
         _allowCreating = false;
     }
 
+    public void AndroidAttackControl()
+    {
+        // control hero has sword
+        if (!_isHeroHasSword) return;
+        
+        // control prohibit
+        if (!_allowCreating) return;
+        
+        // create sword
+        GameObject sword = Instantiate(attackSwordPrefab) as GameObject;
+        sword.transform.position = transform.position;
+        
+        // prohibit creating
+        _allowCreating = false;
+    }
+    
     public void AllowCreatingYes() {
         _allowCreating = true;
     }

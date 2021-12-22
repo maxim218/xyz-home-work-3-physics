@@ -768,10 +768,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: dea0af6f-0afb-4c10-9890-0c45af0105ca
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Robot Game 2D
+  organizationId: m_kolotovkin_mail_corp
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 1
   disableOldInputManagerSupport: 1
